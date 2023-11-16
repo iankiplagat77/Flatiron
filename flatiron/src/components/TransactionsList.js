@@ -11,7 +11,7 @@ function TransactionsList({ transactions, setTransactions, search}) {
   let transactionList;
 
   if(transactions){
-    const filteredTransactions = transactions.filter(transaction => {
+    const filteredTransactions =transactions.filter(transaction => {
       return (
         transaction.description.toLowerCase().includes(search.toLowerCase()) || transaction.category.toLowerCase().includes(search.toLowerCase())
       )
