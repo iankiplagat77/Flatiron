@@ -18,7 +18,7 @@ function AddTransactionForm({newData}) {
       alert("Please fill in all inputs")
     }else if(!formInput.isInvalid){
       // persist transaction on server after validations
-      fetch(`${process.env.REACT_APP_API_URL}`, {
+      fetch(`https://my-json-server.typicode.com/iankiplagat77/flatiron/transactions`, {
       method: "POST",
       headers: {
           "Content-Type": "application/json"
